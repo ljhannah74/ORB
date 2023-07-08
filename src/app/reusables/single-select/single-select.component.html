@@ -1,0 +1,30 @@
+<mat-form-field class="cv-material-control" [class.cv-auto-width]="autoWidth" appearance="fill">
+    <mat-select
+        [attr.id]="id"
+        class="my-auto w-100 lato-regular"
+        panelClass="cv-material-control"
+        [value]="value"
+        [disabled]="disabled || isLoading"
+        (openedChange)="$event ? onOpen() : onClose()"
+        [multiple]="false"
+        [placeholder]="placeholder"
+        [disableRipple]="true"
+    >
+        <mat-select-trigger *ngIf="selectionText">
+            {{ selectionText }}
+        </mat-select-trigger>
+
+        <div class="p-2" *ngIf="search">
+            <div class="search-box live-search">
+                <input type="search" class="form-control" placeholder="Search" [(ngModel)]="filterText" onkeydown="event.stopPropagation()" />
+                <span class="clear-input" [hidden]="!filterText" (click)="filterText = ''"></span>
+            </div>
+        </div>
+
+        <cdk-virtual-scroll-viewport [itemSize]="36" [minBufferPx]="200" [maxBufferPx]="400" style="height: 176px;">
+            <mat-option *cdkVirtualFor="let option of options | filterText: filterText : label" [value]="option[primaryKey]" (onSelectionChange)="onMatSelectChange($event)">
+                {{ option[label] }}
+            </mat-option>
+        </cdk-virtual-scroll-viewport>
+    </mat-select>
+</mat-form-field>
