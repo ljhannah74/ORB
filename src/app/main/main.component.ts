@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+stateChanged(value: any) {
+  this.selectedState = value;
+}
+  states = [
+    { st: 'PA'},
+    { st: 'MD'}, 
+    { st: 'FL'}
+  ];
 
+  selectedState?: {};
 }
