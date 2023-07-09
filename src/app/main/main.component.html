@@ -1,1 +1,14 @@
-<p>main works!</p>
+<div class="container">
+    <div>
+        <single-select
+            placeholder="Choose State..."
+            [options]="states"
+            label="st"
+            primaryKey="st"
+            caption="State:"
+            (valueChange)="stateChanged($event)"
+            >
+        </single-select>
+    </div>
+</div>
+

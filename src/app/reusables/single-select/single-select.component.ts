@@ -20,6 +20,7 @@ export class SingleSelectComponent implements OnInit, OnChanges {
     @Input() primaryKey = "";
     @Input() label = "";
     @Input() selectionText?: string;
+    @Input() caption = "";
 
     @Output() opened = new EventEmitter<void>();
     @Output() closed = new EventEmitter<void>();
