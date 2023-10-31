@@ -1,14 +1,26 @@
-<div class="container">
-    <div>
-        <single-select
-            placeholder="Choose State..."
-            [options]="states"
-            label="st"
-            primaryKey="st"
-            caption="State:"
-            (valueChange)="stateChanged($event)"
-            >
-        </single-select>
-    </div>
-</div>
-
+<table>
+    <tr>
+        <td>
+            <single-select
+                placeholder="Choose State..."
+                [options]="states"
+                label="st"
+                primaryKey="st"
+                caption="State:"
+                (valueChange)="stateChanged($event)"
+                >
+            </single-select>
+        </td>
+        <td>
+            <single-select
+                placeholder="Choose County..."
+                [options]="counties"
+                label="county"
+                primaryKey="county"
+                caption="County:"
+                (valueChange)="countyChanged($event)"
+                >
+            </single-select>
+        </td>
+    </tr>
+</table>
