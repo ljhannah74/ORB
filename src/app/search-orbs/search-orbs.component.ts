@@ -35,6 +35,7 @@ export class SearchOrbsComponent implements OnInit {
   ];
 
   stateList: string[] = [];
+  countyList: string[] = [];
 
   ngOnInit(): void {
     this.getStates();
@@ -42,6 +43,16 @@ export class SearchOrbsComponent implements OnInit {
 
   getStates() {
     this.stateList = [... new Set(this.searchResult.map(item => item.location.state))]; 
+  }
+
+  getCounties(selectedState: string) {
+    this.countyList = [...new Set(this.searchResult.filter((orb) => orb.location.state == selectedState).map(item => item.location.county))];
+    console.log(this.countyList);
+  }
+
+  onStateChange(newState: any) {
+    console.log('State Changed! ', newState);
+    this.getCounties(newState);
   }
 
 }

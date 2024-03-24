@@ -6,7 +6,7 @@
 
         <div class="col">
             <div class="form-floating">
-                <select placeholder="State" class="form-select">
+                <select #state placeholder="State" class="form-select" (change)="onStateChange(state.value)">
                     <option *ngFor="let state of stateList">
                         {{state}}
                     </option>
@@ -17,7 +17,11 @@
 
         <div class="col">
             <div class="form-floating">
-                <input placeholder="County" class="form-control"/>
+                <select #county placeholder="County" class="form-select">
+                    <option *ngFor="let county of countyList">
+                        {{county}}
+                    </option>
+                </select>
                 <label class="text-primary form-label">County</label>
             </div>
         </div>
