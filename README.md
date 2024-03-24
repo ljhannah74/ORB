@@ -1,27 +1,52 @@
-# ORB
+# Online Resource Bank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+Online Resource Bank is a tool that allows users to search for online resources by county and state.
 
-## Development server
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
+- [Contact](#contact)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Introduction
 
-## Code scaffolding
+Briefly introduce the project and its purpose.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Search by County and State**: Users can search for online resources by specifying the county and state.
+- **Filtering**: Users can filter search results based on various criteria.
+- **Sorting**: Search results can be sorted by relevance, date, or other parameters.
+- **Bookmarking**: Users can bookmark their favorite resources for easy access.
+- **User Authentication**: Optional feature to allow users to create accounts and save preferences.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Provide instructions on how to install the project and its dependencies.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+1. **Search**: Enter the county and state in the search bar and click 'Search' to find online resources.
+2. **Filter and Sort**: Use the filter and sorting options to refine search results.
+3. **Bookmark**: Optionally, create an account to bookmark favorite resources.
+4. **Contribute**: Help improve the tool by contributing code, reporting issues, or suggesting new features.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contributing
 
-## Further help
+Guidelines for contributing to the project, including how to report issues and submit pull requests.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Credits
+
+Acknowledge any contributors, libraries, or resources used in the project.
+
+## License
+
+Specify the license under which the project is distributed.
+
+## Contact
+
+Provide contact information for questions, issues, or feedback.
