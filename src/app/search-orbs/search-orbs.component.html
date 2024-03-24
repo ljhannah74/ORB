@@ -1,1 +1,26 @@
-<p>search-orbs works!</p>
+<h5 class="text-md-center m-5">Search Resources</h5>
+
+<div class="m-5 d-grid gap-3">
+    
+    <div class="row">
+
+        <div class="col">
+            <div class="form-floating">
+                <select placeholder="State" class="form-select">
+                    <option *ngFor="let state of stateList">
+                        {{state}}
+                    </option>
+                </select> 
+                <label class="text-primary form-label">State</label>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="form-floating">
+                <input placeholder="County" class="form-control"/>
+                <label class="text-primary form-label">County</label>
+            </div>
+        </div>
+
+    </div>
+</div>
