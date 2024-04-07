@@ -1,16 +1,25 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
+import { SearchOrbsComponent } from './search-orbs/search-orbs.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        NavMenuComponent,
+        SearchOrbsComponent,
       ],
+      providers: []
     }).compileComponents();
   });
 
@@ -20,16 +29,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ORB'`, () => {
+  it(`should have as title 'Online Resource Bank'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ORB');
+    expect(app.title).toEqual('Online Resource Bank');
   });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ORB');
-  });
+  
 });

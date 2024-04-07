@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchOrbsComponent implements OnInit {
 
-    searchResult: Orb[] = [
+    orbsList: Orb[] = [
         {
             location: { state: "Florida", county: "Broward" },
             assessorUrl: "http://www.bcpa.net/search.asp",
@@ -16,9 +16,9 @@ export class SearchOrbsComponent implements OnInit {
         },
         {
             location: { state: "Maryland", county: "Baltimore" },
-            assessorUrl: "http://sdat.resiusa.org/RealProperty/Pages/",
-            taxUrl: "http://www.baltimorecountymd.gov/Agencies/budfin/taxsearch/index.html",
-            landUrl: "http://v3.mdlandrec.net/main/index.cfm?CFID=37749572&CFTOKEN=96667807&jsessionid=ac30c02aebd66aef4aeb124c920121f1444eTR",
+            assessorUrl: "https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx",
+            taxUrl: "https://www.baltimorecountymd.gov/departments/budfin/taxpayer-services/tax-search",
+            landUrl: "https://mdlandrec.net/main/",
         },
         {
             location: { state: "Pennsylvania", county: "Allegheny" },
@@ -36,25 +36,36 @@ export class SearchOrbsComponent implements OnInit {
 
     stateList: string[] = [];
     countyList: string[] = [];
+    selectedOrb: Orb[] = [];
+
+    selectedStateCounty: StateCounty = { state: "", county: "" };
+
 
     ngOnInit(): void {
         this.getStates();
     }
 
     getStates() {
-        this.stateList = [... new Set(this.searchResult.map(item => item.location.state))];
+        this.stateList = [... new Set(this.orbsList.map(item => item.location.state))];
     }
 
     getCounties(selectedState: string) {
-        this.countyList = [...new Set(this.searchResult.filter((orb) => orb.location.state == selectedState).map(item => item.location.county))];
+        this.selectedStateCounty.state = selectedState;
+        this.countyList = [...new Set(this.orbsList.filter((orb) => orb.location.state == selectedState).map(item => item.location.county))];
+    }
+
+    getOrbs() {
+        this.selectedOrb = this.orbsList.filter((orb) => orb.location.state == this.selectedStateCounty.state && orb.location.county == this.selectedStateCounty.county);
+        console.log(this.selectedOrb);
     }
 
     onStateChange(newState: any) {
         this.getCounties(newState);
     }
 
-    onSearchClicked() {
-        alert("CLICKED!");
+    onSearchClicked(newCounty: any) {
+        this.selectedStateCounty.county = newCounty;
+        this.getOrbs();
     }
 
 }

@@ -23,6 +23,7 @@
     "bootstrap-icons": "^1.11.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "webpack-dev-middleware": "^7.1.1",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {

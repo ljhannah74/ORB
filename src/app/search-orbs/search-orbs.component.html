@@ -28,9 +28,36 @@
 
         <div class="col">
             <div class="form-floating">
-                <button type="button" class="btn btn-primary btn-lg" (click)="onSearchClicked()">Search</button>
+                <button type="button" class="btn btn-primary btn-lg" (click)="onSearchClicked(county.value)">Search</button>
             </div>
         </div>
 
+    </div>
+
+ 
+</div>
+
+<h5 class="text-md-center m-5">Searchable Indexes</h5>
+<div class="m-5 d-grid gap-3">
+    <div class="row">
+        <div class="col">
+            Land Index
+        </div>
+        <div class="col">
+            <div *ngIf="selectedOrb[0] != undefined">
+                <a href="{{selectedOrb[0].landUrl}}" target="_blank">Goto Website</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            Tax Assessor
+        </div>
+        <div class="col">
+            <div *ngIf="selectedOrb[0] != undefined">
+                <a href="{{selectedOrb[0].assessorUrl}}" target="_blank">Goto Website</a>
+            </div>
+        </div>
     </div>
 </div>
