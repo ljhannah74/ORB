@@ -30,7 +30,7 @@ Provide instructions on how to install the project and its dependencies.
 
 ## Usage
 
-1. **Search**: Enter the county and state in the search bar and click 'Search' to find online resources.
+1. **Search**: Select the county and state in the drop down lists and click 'Search' to find online resources.
 2. **Filter and Sort**: Use the filter and sorting options to refine search results.
 3. **Bookmark**: Optionally, create an account to bookmark favorite resources.
 4. **Contribute**: Help improve the tool by contributing code, reporting issues, or suggesting new features.
