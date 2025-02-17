@@ -1,0 +1,17 @@
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\bin\x64\Debug\ORB_DLL.dll
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\bin\x64\Debug\ORB_DLL.pdb
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.csproj.AssemblyReference.cache
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.Resources.resources
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.csproj.GenerateResource.cache
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.csproj.CoreCompileInputs.cache
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.dll
+C:\Users\lhann\OneDrive\Documents\Software\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.pdb
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\bin\x64\Debug\ORB_DLL.dll
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\bin\x64\Debug\ORB_DLL.pdb
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.csproj.AssemblyReference.cache
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.Resources.resources
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.csproj.GenerateResource.cache
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.csproj.CoreCompileInputs.cache
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.dll
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\obj\x64\Debug\ORB_DLL.pdb
+C:\Users\lewis\source\repos\ljhannah74\Online-Resource-Bank\ORB_DLL\bin\x64\Debug\Data\ORB_DATABASE.xlsx
